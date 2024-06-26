@@ -1,5 +1,8 @@
-module public-file-api
+module github.com/manuelWizy/public-file-api
 
 go 1.22.4
 
-replace api =>./api
+require (
+    github.com/manuelWizy/public-file-api/api/publicFileApi v0.0.0
+)
+replace api => github.com/manuelWizy/public-file-api/api/publicFileApi v0.0.0
